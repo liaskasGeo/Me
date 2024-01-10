@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+div {
+    display: block;
+    padding: 10px;
+}
+
+.upper-section > h1 , h2 {
+    text-align: center;
+    color: rgb(76, 74, 72);
+}
+
+.upper-section > h1 {
+    font-family: 'Whisper', cursive;
+    font-size: 4rem;
+    word-spacing: 30px;
+    padding: 30px;
+    margin-top: 0;
+}
+
+.upper-section > h2 {
+    font-size: 1.3rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.upper-section {
+    height: 300px;
+    background-color: rgb(236, 236, 117);
+}
+
+.middle-section { 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.middle-section > img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.middle-section > h2 , h3 {
+    display: block;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+.middle-section > h2 {
+    font-weight: 550;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 20px;
+}
+
+.skills > img {
+    border-radius: 5%;
+    width: 180px;
+    height: 180px;
+}
+
+.skills > p {
+    font-size: 0.7rem;
+}
+
+.text-p {
+  width: 320px;
+  height: 180px; 
+  font-family: 'Courier Prime', monospace;
+}
+
+.text-p2 {
+    width: 320px;
+    height: 180px; 
+    font-family: 'Courier Prime', monospace;
+  }
+
+.text-p > p {
+    font-size: 0.9rem;
+}
+
+.text-p2 > p {
+    font-size: 0.9rem;
+}
+
+.bottom-section {
+    background-color: #ebdca8;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-me > a {
+    background-color: #0e1d17; 
+    color: rgb(244, 244, 244);
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.copyright {
+    font-weight: 800;
+}
+
+.contact-message {
+    font-family: 'Courier Prime', monospace;
+}
+
+  @media only screen and (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .text-p,
+    .text-p2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .upper-section > h1 {
+        font-size: 3rem;
+    }
+
+    .upper-section > h2 {
+        font-size: 1rem;
+    }
+}
+
+
+
